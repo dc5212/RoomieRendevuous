@@ -14,6 +14,15 @@ Roomie Rendezvous is a cutting-edge room-sharing platform designed to simplify t
 
 By focusing on user experience and leveraging cloud technologies, Roomie Rendezvous stands out as a robust solution in the competitive market of housing platforms.
 
+How to run:-
+
+1. You will need Python 3.8 version to run this
+2. After Doing git clone please create virtual venv using the command C:\path\python.exe -m venv venv
+3. Then activate the virtual venv and pip install requirements.txt
+4. Make sure you have docker installed in your PC to setup local Postgress DB.
+5. Now navigate to the project directory and run docker run --name django-images-postgres -p 5432:5432 -e POSTGRES_USER=django-images -e POSTGRES_PASSWORD=complexpassword123 -e POSTGRES_DB=django-images -d postgres. Make sure the docker process is running docker ps -f name=django-images-postgres.
+6. After this just run python runserver manage.py and application should spin up in local server http://127.0.0.1:8000/rrapp/
+
 
 References:-
 For setting up django application :
